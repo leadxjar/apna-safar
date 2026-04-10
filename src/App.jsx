@@ -81,6 +81,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "6N/7D", price: 12999, originalPrice: 15999,
     dates: ["Apr 25, 2026", "May 9, 2026", "May 23, 2026"],
     spotsLeft: 4, totalSlots: 20,
+    image: "https://drive.google.com/uc?export=view&id=1KYKQCICy6T3CXNLWNh7OBhYStTx1x2t9",
     bg: "linear-gradient(160deg, #071828 0%, #0d2e52 55%, #081e38 100%)",
     accent: "#5AB8E6", tag: "Snow Adventure", icon: "❄️", rating: 4.9, reviews: 127,
     highlights: ["Rohtang Snow Point", "Kheerganga Trek", "Kasol Riverside Camp", "Sissu Lake"],
@@ -125,6 +126,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "3N/4D", price: 6999, originalPrice: 8999,
     dates: ["Every Weekend", "Apr 19, 2026", "Apr 26, 2026"],
     spotsLeft: 8, totalSlots: 25,
+    image: "https://drive.google.com/uc?export=view&id=14Kij_30_0eAhU581ag_RpHvJQ0Ub8XG4",
     bg: "linear-gradient(160deg, #081e0e 0%, #103d1c 55%, #082814 100%)",
     accent: "#5BE88A", tag: "Weekend Getaway", icon: "🌊", rating: 4.8, reviews: 203,
     highlights: ["26km White Water Rafting", "Bungee Jumping (83m)", "Beatles Ashram", "Ganga Aarti"],
@@ -180,6 +182,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "4N/5D", price: 8999, originalPrice: 11499,
     dates: ["Apr 20, 2026", "May 4, 2026", "May 18, 2026"],
     spotsLeft: 6, totalSlots: 20,
+    image: "https://drive.google.com/uc?export=view&id=1hWftDQj-BHYTjA1Ho2DLR4AddcYo5Aqv",
     bg: "linear-gradient(160deg, #0a1a0a 0%, #1a3a1a 55%, #0a200a 100%)",
     accent: "#7BE87B", tag: "Trek & Temple", icon: "🛕", rating: 4.9, reviews: 94,
     highlights: ["Tungnath Temple (3680m)", "Chandrashila Summit (4130m)", "Deoria Tal Lake", "Ukhimath Village"],
@@ -199,6 +202,7 @@ const TRIPS = [
     difficulty: "Hard", duration: "5N/6D", price: 11999, originalPrice: 14999,
     dates: ["May 6, 2026", "May 20, 2026", "Jun 3, 2026"],
     spotsLeft: 5, totalSlots: 18,
+    image: "https://drive.google.com/uc?export=view&id=1Btj3MTl9ZiKc6lRRQaRCdKnemq2qL3AC",
     bg: "linear-gradient(160deg, #1a0a00 0%, #3a1a00 55%, #200a00 100%)",
     accent: "#FFB347", tag: "Spiritual Trek", icon: "🙏", rating: 5.0, reviews: 76,
     highlights: ["Kedarnath Temple (3583m)", "Bhairavnath Temple", "Vasuki Tal Lake", "Gaurikund Hot Springs"],
@@ -401,15 +405,15 @@ const Footer = ({ setNav }) => {
   return (
     <footer style={{ background: "var(--text)", borderTop: "none", padding: "60px 5vw 28px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 48, marginBottom: 48 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 40, marginBottom: 48, textAlign: "left" }}>
           <div>
-            <div style={{ fontFamily: "var(--h)", fontSize: 22, fontWeight: 700, marginBottom: 14, color: "#fff" }}>
+            <div style={{ fontFamily: "var(--h)", fontSize: 22, fontWeight: 700, marginBottom: 14, color: "#fff", textAlign: "left" }}>
               <span style={{ fontSize: 18 }}>✈️</span> APNA <span style={{ color: "var(--accent)" }}>SAFAR</span>
             </div>
-            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.8, maxWidth: 240 }}>
+            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.8, maxWidth: 240, textAlign: "left" }}>
               Safar Jo Apna Lage — curated group adventures for solo travelers across India's most breathtaking landscapes.
             </p>
-            <div style={{ display: "flex", gap: 10, marginTop: 20 }}>
+            <div style={{ display: "flex", gap: 10, marginTop: 20, flexWrap: "wrap" }}>
               {["Instagram", "YouTube", "WhatsApp"].map(n => (
                 <button key={n} style={{
                   background: "none", border: "1px solid rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.6)",
@@ -420,26 +424,27 @@ const Footer = ({ setNav }) => {
               ))}
             </div>
           </div>
-          <div>
+          <div style={{ textAlign: "left" }}>
             <div style={{ fontSize: 11, letterSpacing: "0.12em", color: "rgba(255,255,255,0.4)", marginBottom: 16, textTransform: "uppercase" }}>Destinations</div>
             {TRIPS.slice(0, 8).map(t => (
               <button key={t.id} onClick={() => go("trip-" + t.id)} style={{
                 display: "block", background: "none", border: "none", cursor: "pointer",
                 color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, textAlign: "left",
+                padding: 0,
                 transition: "color 0.2s",
               }} onMouseEnter={e => e.target.style.color = "var(--accent)"} onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.5)"}>{t.name}</button>
             ))}
           </div>
-          <div>
+          <div style={{ textAlign: "left" }}>
             <div style={{ fontSize: 11, letterSpacing: "0.12em", color: "rgba(255,255,255,0.4)", marginBottom: 16, textTransform: "uppercase" }}>Company</div>
             {["Privacy Policy", "Terms & Conditions", "Refund Policy", "FAQs"].map(n => (
-              <div key={n} style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10 }}>{n}</div>
+              <div key={n} style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, textAlign: "left" }}>{n}</div>
             ))}
           </div>
-          <div>
+          <div style={{ textAlign: "left" }}>
             <div style={{ fontSize: 11, letterSpacing: "0.12em", color: "rgba(255,255,255,0.4)", marginBottom: 16, textTransform: "uppercase" }}>Contact</div>
-            {[["📍", "Noida Sector 62, UP"], ["📧", "info.apnasafar@gmail.com"], ["📞", "+91 82951 03548"]].map(([icon, val]) => (
-              <div key={val} style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, display: "flex", gap: 8 }}>
+            {[["📍", "Bighar Road, Fatehabad, Haryana"], ["📧", "info.apnasafar@gmail.com"], ["📞", "+91 82951 03548"]].map(([icon, val]) => (
+              <div key={val} style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, display: "flex", gap: 8, textAlign: "left" }}>
                 <span>{icon}</span><span>{val}</span>
               </div>
             ))}
@@ -461,34 +466,48 @@ const TripCard = ({ trip, setNav }) => {
 
   return (
     <div className="trip-card" onClick={go} style={{
-      background: trip.bg, borderRadius: 14, overflow: "hidden",
-      cursor: "pointer", border: "1px solid rgba(255,255,255,0.05)",
+      background: "#fff", borderRadius: 16, overflow: "hidden",
+      cursor: "pointer", border: "1px solid rgba(0,0,0,0.08)",
+      boxShadow: "0 2px 16px rgba(0,0,0,0.06)",
     }}>
-      {/* Card top visual */}
-      <div style={{ height: 200, position: "relative", padding: "18px 18px 16px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+      {/* Card top — image or gradient */}
+      <div style={{
+        height: 210, position: "relative", overflow: "hidden",
+        background: trip.image ? "none" : trip.bg,
+      }}>
+        {trip.image && (
+          <img src={trip.image} alt={trip.name} style={{
+            width: "100%", height: "100%", objectFit: "cover",
+            display: "block",
+          }} onError={e => { e.target.style.display = "none"; e.target.parentNode.style.background = trip.bg; }} />
+        )}
+        {/* Overlay */}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)" }} />
+        {/* Tags */}
+        <div style={{ position: "absolute", top: 14, left: 14, right: 14, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
           <span style={{
             background: "rgba(0,0,0,0.5)", backdropFilter: "blur(12px)",
-            border: `1px solid ${trip.accent}55`, color: trip.accent,
-            padding: "5px 12px", borderRadius: 20, fontSize: 11, fontWeight: 500,
+            border: `1px solid ${trip.accent}66`, color: trip.accent,
+            padding: "5px 12px", borderRadius: 20, fontSize: 11, fontWeight: 600,
           }}>{trip.icon} {trip.tag}</span>
           <span style={{
             background: "rgba(0,0,0,0.5)", backdropFilter: "blur(12px)",
-            color: "rgba(255,255,255,0.7)", padding: "5px 10px", borderRadius: 20, fontSize: 11,
+            color: "rgba(255,255,255,0.85)", padding: "5px 10px", borderRadius: 20, fontSize: 11,
           }}>{trip.difficulty}</span>
         </div>
-        <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+        {/* Highlights bottom */}
+        <div style={{ position: "absolute", bottom: 14, left: 14, display: "flex", gap: 6, flexWrap: "wrap" }}>
           {trip.highlights.slice(0, 2).map(h => (
             <span key={h} style={{
-              background: "rgba(0,0,0,0.45)", backdropFilter: "blur(10px)",
-              color: "rgba(255,255,255,0.65)", padding: "3px 9px", borderRadius: 4, fontSize: 10,
+              background: "rgba(0,0,0,0.5)", backdropFilter: "blur(10px)",
+              color: "rgba(255,255,255,0.85)", padding: "3px 9px", borderRadius: 4, fontSize: 10, fontWeight: 500,
             }}>{h}</span>
           ))}
         </div>
       </div>
 
       {/* Card body */}
-      <div style={{ padding: "18px 20px 20px", background: "#fff", borderTop: "1px solid rgba(0,0,0,0.06)" }}>
+      <div style={{ padding: "18px 20px 20px", background: "#fff" }}>
         <div style={{ color: "#E8671A", fontSize: 12, marginBottom: 5 }}>
           {"★".repeat(Math.floor(trip.rating))} <span style={{ color: "var(--sub)" }}>{trip.rating} ({trip.reviews})</span>
         </div>
@@ -1116,7 +1135,7 @@ const ContactPage = () => {
           <div>
             <div style={{ display: "flex", flexDirection: "column", gap: 28, marginBottom: 32 }}>
               {[
-                { icon: "📍", label: "Address", value: "Noida Sector 62, Uttar Pradesh" },
+                { icon: "📍", label: "Address", value: "Bighar Road, Fatehabad, Haryana" },
                 { icon: "📧", label: "Email", value: "info.apnasafar@gmail.com" },
                 { icon: "📞", label: "Phone", value: "+91 82951 03548" },
                 { icon: "⏰", label: "Working Hours", value: "Mon–Sat, 10AM – 7PM IST" },
