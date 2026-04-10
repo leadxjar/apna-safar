@@ -81,7 +81,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "6N/7D", price: 12999, originalPrice: 15999,
     dates: ["Apr 25, 2026", "May 9, 2026", "May 23, 2026"],
     spotsLeft: 4, totalSlots: 20,
-    image: "https://ibb.co/nMPQzSzV",
+    image: "https://drive.google.com/uc?export=view&id=1KYKQCICy6T3CXNLWNh7OBhYStTx1x2t9",
     bg: "linear-gradient(160deg, #071828 0%, #0d2e52 55%, #081e38 100%)",
     accent: "#5AB8E6", tag: "Snow Adventure", icon: "❄️", rating: 4.9, reviews: 127,
     highlights: ["Rohtang Snow Point", "Kheerganga Trek", "Kasol Riverside Camp", "Sissu Lake"],
@@ -576,7 +576,7 @@ const HomePage = ({ setNav }) => {
         padding: "0 6vw 90px",
       }}>
         {/* Atmospheric background */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/file/d/1H-VQiwmiBVziQP-jRYhvabupashi62ik/view?usp=drive_link')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/uc?export=view&id=1H-VQiwmiBVziQP-jRYhvabupashi62ik')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(255,248,244,0.45)" }} />
         <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.06) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.04) 0%, transparent 65%)", pointerEvents: "none" }} />
