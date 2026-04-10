@@ -553,13 +553,14 @@ const HomePage = ({ setNav }) => {
       <div style={{
         minHeight: "100vh", position: "relative", overflow: "hidden",
         display: "flex", flexDirection: "column", justifyContent: "flex-end",
+        alignItems: "flex-start",
         padding: "0 6vw 90px",
       }}>
         {/* Atmospheric background */}
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, #FFF8F4 0%, #FFF3EC 40%, #FEF0E6 100%)" }} />
-        <div style={{ position: "absolute", inset: 0, opacity: 0.04, backgroundImage: "radial-gradient(circle at 1px 1px, rgba(232,103,26,1) 1px, transparent 0)", backgroundSize: "36px 36px" }} />
-        <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.12) 0%, transparent 65%)", pointerEvents: "none" }} />
-        <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.08) 0%, transparent 65%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/uc?export=view&id=1H-VQiwmiBVziQP-jRYhvabupashi62ik')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
+        <div style={{ position: "absolute", inset: 0, background: "rgba(255,248,244,0.45)" }} />
+        <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.06) 0%, transparent 65%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.04) 0%, transparent 65%)", pointerEvents: "none" }} />
 
         <div style={{ position: "relative", zIndex: 2, maxWidth: 1200, width: "100%" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(232,103,26,0.1)", border: "1.5px solid rgba(232,103,26,0.25)", borderRadius: 20, padding: "6px 16px", marginBottom: 28 }}>
@@ -621,18 +622,29 @@ const HomePage = ({ setNav }) => {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 52, flexWrap: "wrap", gap: 16 }}>
             <div>
               <div style={{ color: "var(--accent)", fontSize: 11, letterSpacing: "0.18em", marginBottom: 12, textTransform: "uppercase" }}>Kahan Jaana Hai?</div>
-              <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 700, lineHeight: 1.1 }}>
+              <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 700, lineHeight: 1.1, color: "#1A1208" }}>
                 Curated <span style={{ color: "var(--accent)" }}>Trips</span>
               </h2>
             </div>
             <button className="desktop-only" onClick={() => go("destinations")} style={{
-              background: "none", color: "var(--accent)", border: "1px solid var(--border)",
-              padding: "11px 22px", borderRadius: 6, cursor: "pointer", fontSize: 13,
-              transition: "border-color 0.2s",
-            }} onMouseEnter={e => e.target.style.borderColor = "var(--accent)"}>View All Trips →</button>
+              background: "var(--text)", color: "#fff", border: "none",
+              padding: "13px 28px", borderRadius: 8, cursor: "pointer", fontSize: 14, fontWeight: 600,
+              fontFamily: "var(--b)", transition: "opacity 0.2s",
+            }} onMouseEnter={e => e.target.style.opacity = 0.85} onMouseLeave={e => e.target.style.opacity = 1}>View All Trips →</button>
           </div>
           <div className="trip-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(290px, 1fr))", gap: 18 }}>
-            {TRIPS.slice(0, 4).map(t => <TripCard key={t.id} trip={t} setNav={setNav} />)}
+            {TRIPS.slice(0, 6).map(t => <TripCard key={t.id} trip={t} setNav={setNav} />)}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 44 }}>
+            <button onClick={() => go("destinations")} style={{
+              background: "var(--accent)", color: "#fff", border: "none",
+              padding: "15px 48px", borderRadius: 8, cursor: "pointer",
+              fontSize: 16, fontWeight: 600, fontFamily: "var(--b)",
+              transition: "transform 0.2s, box-shadow 0.2s",
+            }} onMouseEnter={e => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = "0 8px 24px rgba(232,103,26,0.35)"; }}
+               onMouseLeave={e => { e.target.style.transform = "none"; e.target.style.boxShadow = "none"; }}>
+              ✈️ View All {TRIPS.length} Destinations
+            </button>
           </div>
         </div>
       </div>
@@ -659,8 +671,8 @@ const HomePage = ({ setNav }) => {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ marginBottom: 52 }}>
             <div style={{ color: "var(--accent)", fontSize: 11, letterSpacing: "0.18em", marginBottom: 12, textTransform: "uppercase" }}>Traveler Stories</div>
-            <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 300, lineHeight: 1.1 }}>
-              Told By Those <em style={{ fontStyle: "italic" }}>Who Lived It</em>
+            <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 700, lineHeight: 1.1, color: "#1A1208" }}>
+              Told By Those Who Lived It
             </h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 18 }}>
@@ -697,7 +709,7 @@ const HomePage = ({ setNav }) => {
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 600, background: "radial-gradient(circle, rgba(232,103,26,0.08) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "relative", zIndex: 2 }}>
           <div style={{ color: "var(--accent)", fontSize: 11, letterSpacing: "0.18em", marginBottom: 16, textTransform: "uppercase" }}>⚡ Limited Spots Each Batch</div>
-          <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(40px, 7vw, 80px)", fontWeight: 700, lineHeight: 1.05, marginBottom: 20 }}>
+          <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(40px, 7vw, 80px)", fontWeight: 700, lineHeight: 1.05, marginBottom: 20, color: "#1A1208" }}>
             Apna <span style={{ color: "var(--accent)" }}>Safar</span>,<br />Apne <span style={{ color: "var(--accent2)" }}>Log</span>
           </h2>
           <p style={{ color: "var(--sub)", fontSize: 17, maxWidth: 480, margin: "0 auto 44px", lineHeight: 1.75 }}>
@@ -733,16 +745,16 @@ const DestinationsPage = ({ setNav }) => {
       <div style={{ padding: "64px 5vw 80px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ color: "var(--accent)", fontSize: 11, letterSpacing: "0.18em", marginBottom: 14, textTransform: "uppercase" }}>Explore</div>
-          <h1 style={{ fontFamily: "var(--h)", fontSize: "clamp(44px, 8vw, 88px)", fontWeight: 300, marginBottom: 44, lineHeight: 1 }}>All Destinations</h1>
+          <h1 style={{ fontFamily: "var(--h)", fontSize: "clamp(44px, 8vw, 88px)", fontWeight: 800, marginBottom: 44, lineHeight: 1, color: "#1A1208" }}>All Destinations</h1>
 
           <div style={{ display: "flex", gap: 10, marginBottom: 44, flexWrap: "wrap" }}>
             {["All", "Easy", "Moderate", "Hard"].map(d => (
               <button key={d} onClick={() => setFilter(d)} style={{
-                background: filter === d ? "var(--accent)" : "var(--card)",
-                color: filter === d ? "#000" : "var(--sub)",
-                border: `1px solid ${filter === d ? "var(--accent)" : "var(--border)"}`,
+                background: filter === d ? "var(--accent)" : "#fff",
+                color: filter === d ? "#fff" : "#1A1208",
+                border: `1.5px solid ${filter === d ? "var(--accent)" : "rgba(0,0,0,0.12)"}`,
                 padding: "9px 22px", borderRadius: 100, cursor: "pointer",
-                fontSize: 14, fontFamily: "var(--b)", transition: "all 0.2s",
+                fontSize: 14, fontFamily: "var(--b)", fontWeight: 500, transition: "all 0.2s",
               }}>{d}</button>
             ))}
           </div>
