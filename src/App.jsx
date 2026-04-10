@@ -81,7 +81,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "6N/7D", price: 12999, originalPrice: 15999,
     dates: ["Apr 25, 2026", "May 9, 2026", "May 23, 2026"],
     spotsLeft: 4, totalSlots: 20,
-    image: "image: "image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",",
+    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
     bg: "linear-gradient(160deg, #071828 0%, #0d2e52 55%, #081e38 100%)",
     accent: "#5AB8E6", tag: "Snow Adventure", icon: "❄️", rating: 4.9, reviews: 127,
     highlights: ["Rohtang Snow Point", "Kheerganga Trek", "Kasol Riverside Camp", "Sissu Lake"],
@@ -103,6 +103,7 @@ const TRIPS = [
     difficulty: "Hard", duration: "8N/9D", price: 18999, originalPrice: 22999,
     dates: ["May 30, 2026", "Jun 13, 2026", "Jun 27, 2026"],
     spotsLeft: 3, totalSlots: 16,
+    image: "https://images.unsplash.com/photo-1604608672516-f1b9c8c1e90e?w=800&q=80",
     bg: "linear-gradient(160deg, #1c1008 0%, #3d2610 55%, #241408 100%)",
     accent: "#E8963E", tag: "High Altitude", icon: "🏔️", rating: 5.0, reviews: 64,
     highlights: ["Key Monastery (4166m)", "Chandratal Lake", "Chicham Bridge", "Pin Valley NP"],
@@ -126,7 +127,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "3N/4D", price: 6999, originalPrice: 8999,
     dates: ["Every Weekend", "Apr 19, 2026", "Apr 26, 2026"],
     spotsLeft: 8, totalSlots: 25,
-    image: "https://drive.google.com/uc?export=view&id=14Kij_30_0eAhU581ag_RpHvJQ0Ub8XG4",
+    image: "https://images.unsplash.com/photo-1585016495481-8c53c5a77151?w=800&q=80",
     bg: "linear-gradient(160deg, #081e0e 0%, #103d1c 55%, #082814 100%)",
     accent: "#5BE88A", tag: "Weekend Getaway", icon: "🌊", rating: 4.8, reviews: 203,
     highlights: ["26km White Water Rafting", "Bungee Jumping (83m)", "Beatles Ashram", "Ganga Aarti"],
@@ -145,6 +146,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "4N/5D", price: 9999, originalPrice: 12999,
     dates: ["May 1, 2026", "May 15, 2026", "Jun 5, 2026"],
     spotsLeft: 10, totalSlots: 25,
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
     bg: "linear-gradient(160deg, #080e22 0%, #0f2044 55%, #081530 100%)",
     accent: "#5BACE8", tag: "Beach Holiday", icon: "🏖️", rating: 4.7, reviews: 189,
     highlights: ["North & South Goa", "Old Goa Churches", "Arpora Night Market", "Sunset Cruise"],
@@ -164,6 +166,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "3N/4D", price: 7499, originalPrice: 9499,
     dates: ["Every Weekend", "Apr 19, 2026", "May 3, 2026"],
     spotsLeft: 5, totalSlots: 18,
+    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&q=80",
     bg: "linear-gradient(160deg, #081408 0%, #1c3610 55%, #101e08 100%)",
     accent: "#8BE85B", tag: "Offbeat Hidden Gem", icon: "🌿", rating: 4.9, reviews: 88,
     highlights: ["Jibhi Waterfall", "Jalori Pass (3120m)", "Serolsar Lake", "Ancient Wooden Cottages"],
@@ -182,7 +185,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "4N/5D", price: 8999, originalPrice: 11499,
     dates: ["Apr 20, 2026", "May 4, 2026", "May 18, 2026"],
     spotsLeft: 6, totalSlots: 20,
-    image: "https://drive.google.com/uc?export=view&id=1hWftDQj-BHYTjA1Ho2DLR4AddcYo5Aqv",
+    image: "https://images.unsplash.com/photo-1543906965-f9520aa2ed8a?w=800&q=80",
     bg: "linear-gradient(160deg, #0a1a0a 0%, #1a3a1a 55%, #0a200a 100%)",
     accent: "#7BE87B", tag: "Trek & Temple", icon: "🛕", rating: 4.9, reviews: 94,
     highlights: ["Tungnath Temple (3680m)", "Chandrashila Summit (4130m)", "Deoria Tal Lake", "Ukhimath Village"],
@@ -202,7 +205,7 @@ const TRIPS = [
     difficulty: "Hard", duration: "5N/6D", price: 11999, originalPrice: 14999,
     dates: ["May 6, 2026", "May 20, 2026", "Jun 3, 2026"],
     spotsLeft: 5, totalSlots: 18,
-    image: "https://drive.google.com/uc?export=view&id=1Btj3MTl9ZiKc6lRRQaRCdKnemq2qL3AC",
+    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
     bg: "linear-gradient(160deg, #1a0a00 0%, #3a1a00 55%, #200a00 100%)",
     accent: "#FFB347", tag: "Spiritual Trek", icon: "🙏", rating: 5.0, reviews: 76,
     highlights: ["Kedarnath Temple (3583m)", "Bhairavnath Temple", "Vasuki Tal Lake", "Gaurikund Hot Springs"],
@@ -223,6 +226,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "3N/4D", price: 5999, originalPrice: 7999,
     dates: ["Every Weekend", "Apr 18, 2026", "Apr 25, 2026"],
     spotsLeft: 9, totalSlots: 22,
+    image: "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800&q=80",
     bg: "linear-gradient(160deg, #0a0818 0%, #1a1040 55%, #0a0820 100%)",
     accent: "#B47BFF", tag: "Backpacker Vibes", icon: "🎒", rating: 4.8, reviews: 156,
     highlights: ["Kasol Riverside Camp", "Kheerganga Hot Springs", "Tosh Village", "Chalal Trek"],
@@ -241,6 +245,7 @@ const TRIPS = [
     difficulty: "Hard", duration: "7N/8D", price: 24999, originalPrice: 29999,
     dates: ["Jun 10, 2026", "Jun 24, 2026", "Jul 8, 2026"],
     spotsLeft: 4, totalSlots: 16,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
     bg: "linear-gradient(160deg, #080820 0%, #100840 55%, #080028 100%)",
     accent: "#FFD700", tag: "Bucket List Trip", icon: "🌄", rating: 5.0, reviews: 112,
     highlights: ["Pangong Tso Lake", "Nubra Valley & Sand Dunes", "Khardung La (5359m)", "Magnetic Hill"],
@@ -263,6 +268,7 @@ const TRIPS = [
     difficulty: "Easy", duration: "5N/6D", price: 13999, originalPrice: 17999,
     dates: ["May 10, 2026", "May 24, 2026", "Jun 7, 2026"],
     spotsLeft: 7, totalSlots: 20,
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80",
     bg: "linear-gradient(160deg, #001810 0%, #003020 55%, #001810 100%)",
     accent: "#4ECDC4", tag: "South India Escape", icon: "🌴", rating: 4.8, reviews: 98,
     highlights: ["Alleppey Houseboat", "Munnar Tea Gardens", "Athirapally Waterfall", "Fort Kochi Heritage"],
@@ -576,8 +582,8 @@ const HomePage = ({ setNav }) => {
         padding: "0 6vw 90px",
       }}>
         {/* Atmospheric background */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/uc?export=view&id=1H-VQiwmiBVziQP-jRYhvabupashi62ik')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
-        <div style={{ position: "absolute", inset: 0, background: "rgba(255,248,244,0.45)" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
+        <div style={{ position: "absolute", inset: 0, background: "rgba(255,248,244,0.7)" }} />
         <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.06) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.04) 0%, transparent 65%)", pointerEvents: "none" }} />
 
