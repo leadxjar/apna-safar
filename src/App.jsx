@@ -174,6 +174,105 @@ const TRIPS = [
       { day: 4, title: "Return to Chandigarh", desc: "Leisurely breakfast. Depart by noon, arrive Chandigarh by evening." },
     ]
   },
+  {
+    id: "chopta", name: "Chopta & Tungnath",
+    tagline: "Mini Switzerland of India — meadows, temples & snow",
+    difficulty: "Moderate", duration: "4N/5D", price: 8999, originalPrice: 11499,
+    dates: ["Apr 20, 2026", "May 4, 2026", "May 18, 2026"],
+    spotsLeft: 6, totalSlots: 20,
+    bg: "linear-gradient(160deg, #0a1a0a 0%, #1a3a1a 55%, #0a200a 100%)",
+    accent: "#7BE87B", tag: "Trek & Temple", icon: "🛕", rating: 4.9, reviews: 94,
+    highlights: ["Tungnath Temple (3680m)", "Chandrashila Summit (4130m)", "Deoria Tal Lake", "Ukhimath Village"],
+    inclusions: ["Guesthouse & camp stays", "All meals (veg)", "Transport from Haridwar", "Trek guide", "Permits & entry fees"],
+    exclusions: ["Haridwar travel (own)", "Personal trekking gear", "Medical expenses", "Insurance"],
+    itinerary: [
+      { day: 1, title: "Haridwar → Ukhimath", desc: "Drive through Devprayag and Rudraprayag. Evening at peaceful Ukhimath village." },
+      { day: 2, title: "Deoria Tal Lake Trek", desc: "Morning trek to stunning Deoria Tal — reflections of Chaukhamba peaks on the lake surface." },
+      { day: 3, title: "Chopta → Tungnath Trek", desc: "Trek 4km to Tungnath — world's highest Shiva temple at 3680m. Overnight at Chopta." },
+      { day: 4, title: "Chandrashila Summit", desc: "Early morning summit climb to 4130m. 360° Himalayan panorama — Nanda Devi, Trishul, Kedar peaks." },
+      { day: 5, title: "Return to Haridwar", desc: "Descend, drive back. Trip ends with memories of the most beautiful meadows in India." },
+    ]
+  },
+  {
+    id: "kedarnath", name: "Kedarnath Yatra",
+    tagline: "Sacred Himalayas — faith, snow & divine energy",
+    difficulty: "Hard", duration: "5N/6D", price: 11999, originalPrice: 14999,
+    dates: ["May 6, 2026", "May 20, 2026", "Jun 3, 2026"],
+    spotsLeft: 5, totalSlots: 18,
+    bg: "linear-gradient(160deg, #1a0a00 0%, #3a1a00 55%, #200a00 100%)",
+    accent: "#FFB347", tag: "Spiritual Trek", icon: "🙏", rating: 5.0, reviews: 76,
+    highlights: ["Kedarnath Temple (3583m)", "Bhairavnath Temple", "Vasuki Tal Lake", "Gaurikund Hot Springs"],
+    inclusions: ["Hotel + dharamshala stays", "All meals", "Transport from Haridwar", "Experienced guide", "Pony/palki booking support"],
+    exclusions: ["Pony/helicopter charges", "Personal expenses", "Travel insurance", "Medical expenses"],
+    itinerary: [
+      { day: 1, title: "Haridwar → Guptkashi", desc: "Drive along Mandakini river. Evening prayers at Ardhnarishwar Temple in Guptkashi." },
+      { day: 2, title: "Guptkashi → Gaurikund → Trek Start", desc: "Drive to Gaurikund (base camp at 1982m). Hot springs dip, begin the 16km trek to Kedarnath." },
+      { day: 3, title: "Kedarnath Darshan", desc: "Early morning darshan at the sacred Kedarnath Temple. Visit Bhairavnath Temple above. Spiritual atmosphere." },
+      { day: 4, title: "Vasuki Tal (Optional)", desc: "Optional trek to Vasuki Tal lake at 4135m — stunning alpine lake with glacier views." },
+      { day: 5, title: "Trek Down → Sonprayag", desc: "Descend to Gaurikund. Drive to Sonprayag. Farewell dinner with the group." },
+      { day: 6, title: "Return to Haridwar", desc: "Scenic drive back. Trip ends with blessings of Baba Kedarnath." },
+    ]
+  },
+  {
+    id: "kasol", name: "Kasol & Kheerganga",
+    tagline: "Parvati Valley chill — cafes, rivers & hot springs",
+    difficulty: "Easy", duration: "3N/4D", price: 5999, originalPrice: 7999,
+    dates: ["Every Weekend", "Apr 18, 2026", "Apr 25, 2026"],
+    spotsLeft: 9, totalSlots: 22,
+    bg: "linear-gradient(160deg, #0a0818 0%, #1a1040 55%, #0a0820 100%)",
+    accent: "#B47BFF", tag: "Backpacker Vibes", icon: "🎒", rating: 4.8, reviews: 156,
+    highlights: ["Kasol Riverside Camp", "Kheerganga Hot Springs", "Tosh Village", "Chalal Trek"],
+    inclusions: ["Riverside camp + guesthouse", "Breakfast & dinner", "Transport from Delhi", "Trek guide for Kheerganga", "Bonfire & music nights"],
+    exclusions: ["Lunch (own)", "Personal expenses", "Insurance", "Alcohol"],
+    itinerary: [
+      { day: 1, title: "Delhi → Kasol (Overnight Bus)", desc: "Board overnight bus from Delhi. Wake up to Parvati Valley views — green mountains and blue river." },
+      { day: 2, title: "Kasol Explore & Chalal", desc: "Israeli cafes, Chalal village trek, riverside hangout. Evening bonfire and music jam." },
+      { day: 3, title: "Kheerganga Trek", desc: "12km trek through pine forests. Reward: natural hot spring pool at 3050m with mountain views." },
+      { day: 4, title: "Tosh Village & Return", desc: "Visit the charming Tosh village. Afternoon bus back to Delhi, arrive midnight." },
+    ]
+  },
+  {
+    id: "ladakh", name: "Ladakh — Land of High Passes",
+    tagline: "Pangong Lake, Nubra Valley & monastery magic",
+    difficulty: "Hard", duration: "7N/8D", price: 24999, originalPrice: 29999,
+    dates: ["Jun 10, 2026", "Jun 24, 2026", "Jul 8, 2026"],
+    spotsLeft: 4, totalSlots: 16,
+    bg: "linear-gradient(160deg, #080820 0%, #100840 55%, #080028 100%)",
+    accent: "#FFD700", tag: "Bucket List Trip", icon: "🌄", rating: 5.0, reviews: 112,
+    highlights: ["Pangong Tso Lake", "Nubra Valley & Sand Dunes", "Khardung La (5359m)", "Magnetic Hill"],
+    inclusions: ["Hotel + guesthouse stays", "All meals", "Innova/SUV transport", "Experienced Ladakh guide", "Inner Line Permits", "Oxygen cylinder"],
+    exclusions: ["Flights to Leh", "Personal gear", "Travel insurance", "Tips for crew"],
+    itinerary: [
+      { day: 1, title: "Arrive Leh — Acclimatize", desc: "Rest day in Leh at 3500m. Walk to Leh Market and Shanti Stupa. No strenuous activity." },
+      { day: 2, title: "Leh Local Sightseeing", desc: "Leh Palace, Shey Palace, Thiksey Monastery, Hemis Monastery — Ladakh's cultural soul." },
+      { day: 3, title: "Leh → Nubra Valley", desc: "Cross Khardung La (5359m) — world's one of highest motorable passes. Double-humped camel ride in Hunder sand dunes." },
+      { day: 4, title: "Nubra → Pangong Lake", desc: "Drive through stunning mountain landscapes to iconic Pangong Tso — the lake that changes colours." },
+      { day: 5, title: "Pangong — Sunrise & Explore", desc: "Witness magical sunrise over Pangong. Explore along the 134km long lake spanning India-China border." },
+      { day: 6, title: "Pangong → Leh via Chang La", desc: "Return via Chang La pass (5360m). Visit Rancho School (3 Idiots fame)." },
+      { day: 7, title: "Magnetic Hill & Gurudwara", desc: "Visit Magnetic Hill, Gurudwara Pathar Sahib, Hall of Fame. Farewell group dinner." },
+      { day: 8, title: "Fly Back from Leh", desc: "Drop at Leh airport. Trip ends — Ladakh stays in your heart forever." },
+    ]
+  },
+  {
+    id: "kerala", name: "Kerala Backwaters & Munnar",
+    tagline: "Houseboats, tea gardens & God's Own Country",
+    difficulty: "Easy", duration: "5N/6D", price: 13999, originalPrice: 17999,
+    dates: ["May 10, 2026", "May 24, 2026", "Jun 7, 2026"],
+    spotsLeft: 7, totalSlots: 20,
+    bg: "linear-gradient(160deg, #001810 0%, #003020 55%, #001810 100%)",
+    accent: "#4ECDC4", tag: "South India Escape", icon: "🌴", rating: 4.8, reviews: 98,
+    highlights: ["Alleppey Houseboat", "Munnar Tea Gardens", "Athirapally Waterfall", "Fort Kochi Heritage"],
+    inclusions: ["Hotels + houseboat stay", "All meals (Kerala cuisine)", "AC vehicle throughout", "Trip Captain", "Houseboat cruise included"],
+    exclusions: ["Flights to Kochi", "Personal expenses", "Adventure activities", "Insurance"],
+    itinerary: [
+      { day: 1, title: "Arrive Kochi — Fort Kochi", desc: "Pickup from Kochi airport/station. Explore Fort Kochi — Chinese fishing nets, spice markets, colonial heritage." },
+      { day: 2, title: "Kochi → Munnar", desc: "Drive up to Munnar at 1600m. Endless tea plantations, Eravikulam National Park, Mattupetty Lake." },
+      { day: 3, title: "Munnar — Tea & Waterfalls", desc: "Tea museum visit, Top Station viewpoint, Attukal Waterfalls. Evening bonfire in tea garden." },
+      { day: 4, title: "Munnar → Alleppey", desc: "Drive down to Alleppey — backwater capital. Board your private houseboat on Kerala's famous canals." },
+      { day: 5, title: "Houseboat Day", desc: "Full day cruising through backwaters. Village life, paddy fields, toddy shops from the boat. Sunset on water." },
+      { day: 6, title: "Alleppey → Kochi Departure", desc: "Morning check-out. Drive to Kochi. Trip ends with fresh coconut water and Kerala memories." },
+    ]
+  },
 ];
 
 const TESTIMONIALS = [
@@ -323,7 +422,7 @@ const Footer = ({ setNav }) => {
           </div>
           <div>
             <div style={{ fontSize: 11, letterSpacing: "0.12em", color: "rgba(255,255,255,0.4)", marginBottom: 16, textTransform: "uppercase" }}>Destinations</div>
-            {TRIPS.slice(0, 5).map(t => (
+            {TRIPS.slice(0, 8).map(t => (
               <button key={t.id} onClick={() => go("trip-" + t.id)} style={{
                 display: "block", background: "none", border: "none", cursor: "pointer",
                 color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, textAlign: "left",
@@ -339,7 +438,7 @@ const Footer = ({ setNav }) => {
           </div>
           <div>
             <div style={{ fontSize: 11, letterSpacing: "0.12em", color: "rgba(255,255,255,0.4)", marginBottom: 16, textTransform: "uppercase" }}>Contact</div>
-            {[["📍", "Your City, India"], ["📧", "your@email.com"], ["📞", "+91 XXXXX XXXXX"]].map(([icon, val]) => (
+            {[["📍", "Noida Sector 62, UP"], ["📧", "info.apnasafar@gmail.com"], ["📞", "+91 82951 03548"]].map(([icon, val]) => (
               <div key={val} style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 10, display: "flex", gap: 8 }}>
                 <span>{icon}</span><span>{val}</span>
               </div>
@@ -462,7 +561,7 @@ const HomePage = ({ setNav }) => {
         <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.12) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.08) 0%, transparent 65%)", pointerEvents: "none" }} />
 
-        <div style={{ position: "relative", zIndex: 2 }}>
+        <div style={{ position: "relative", zIndex: 2, maxWidth: 1200, width: "100%" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(232,103,26,0.1)", border: "1.5px solid rgba(232,103,26,0.25)", borderRadius: 20, padding: "6px 16px", marginBottom: 28 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--accent)", display: "inline-block" }} />
             <span style={{ color: "var(--accent)", fontSize: 12, letterSpacing: "0.14em", fontWeight: 600, textTransform: "uppercase" }}>Safar Jo Apna Lage ✈️</span>
@@ -472,8 +571,8 @@ const HomePage = ({ setNav }) => {
             fontWeight: 800, lineHeight: 0.95, letterSpacing: "-0.02em",
             marginBottom: 28, maxWidth: 980, color: "var(--text)",
           }}>
-            Apna <span style={{ color: "var(--accent)" }}>सफ़र</span>,<br />
-            Apna <span style={{ color: "var(--accent2)" }}>परिवार</span>
+            Apna <span style={{ color: "var(--accent)" }}>Safar</span>,<br />
+            Apne <span style={{ color: "var(--accent2)" }}>Log</span>
           </h1>
           <p style={{ color: "var(--sub)", fontSize: "clamp(15px, 2vw, 18px)", maxWidth: 500, lineHeight: 1.75, marginBottom: 44 }}>
             Group travel curated for solo travelers. Hop on, make friends, create memories. <strong style={{ color: "var(--text)", fontWeight: 600 }}>Safar Jo Apna Lage.</strong>
@@ -599,7 +698,7 @@ const HomePage = ({ setNav }) => {
         <div style={{ position: "relative", zIndex: 2 }}>
           <div style={{ color: "var(--accent)", fontSize: 11, letterSpacing: "0.18em", marginBottom: 16, textTransform: "uppercase" }}>⚡ Limited Spots Each Batch</div>
           <h2 style={{ fontFamily: "var(--h)", fontSize: "clamp(40px, 7vw, 80px)", fontWeight: 700, lineHeight: 1.05, marginBottom: 20 }}>
-            Tera <span style={{ color: "var(--accent)" }}>Safar</span>,<br />Teri <span style={{ color: "var(--accent2)" }}>Family</span>
+            Apna <span style={{ color: "var(--accent)" }}>Safar</span>,<br />Apne <span style={{ color: "var(--accent2)" }}>Log</span>
           </h2>
           <p style={{ color: "var(--sub)", fontSize: 17, maxWidth: 480, margin: "0 auto 44px", lineHeight: 1.75 }}>
             Join a batch of solo travelers. Leave with a family. Spots fill up fast — don't miss your batch.
@@ -1005,9 +1104,9 @@ const ContactPage = () => {
           <div>
             <div style={{ display: "flex", flexDirection: "column", gap: 28, marginBottom: 32 }}>
               {[
-                { icon: "📍", label: "Address", value: "Your City, India" },
-                { icon: "📧", label: "Email", value: "your@email.com" },
-                { icon: "📞", label: "Phone", value: "+91 XXXXX XXXXX" },
+                { icon: "📍", label: "Address", value: "Noida Sector 62, Uttar Pradesh" },
+                { icon: "📧", label: "Email", value: "info.apnasafar@gmail.com" },
+                { icon: "📞", label: "Phone", value: "+91 82951 03548" },
                 { icon: "⏰", label: "Working Hours", value: "Mon–Sat, 10AM – 7PM IST" },
               ].map(({ icon, label, value }) => (
                 <div key={label} style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
