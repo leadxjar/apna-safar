@@ -81,7 +81,7 @@ const TRIPS = [
     difficulty: "Moderate", duration: "6N/7D", price: 12999, originalPrice: 15999,
     dates: ["Apr 25, 2026", "May 9, 2026", "May 23, 2026"],
     spotsLeft: 4, totalSlots: 20,
-    image: "https://drive.google.com/uc?export=view&id=1KYKQCICy6T3CXNLWNh7OBhYStTx1x2t9",
+    image: "image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",",
     bg: "linear-gradient(160deg, #071828 0%, #0d2e52 55%, #081e38 100%)",
     accent: "#5AB8E6", tag: "Snow Adventure", icon: "❄️", rating: 4.9, reviews: 127,
     highlights: ["Rohtang Snow Point", "Kheerganga Trek", "Kasol Riverside Camp", "Sissu Lake"],
