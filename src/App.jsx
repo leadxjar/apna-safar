@@ -576,7 +576,7 @@ const HomePage = ({ setNav }) => {
         padding: "0 6vw 90px",
       }}>
         {/* Atmospheric background */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/uc?export=view&id=1H-VQiwmiBVziQP-jRYhvabupashi62ik')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "url('https://drive.google.com/file/d/1H-VQiwmiBVziQP-jRYhvabupashi62ik/view?usp=drive_link')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} />
         <div style={{ position: "absolute", inset: 0, background: "rgba(255,248,244,0.45)" }} />
         <div style={{ position: "absolute", top: "5%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(232,103,26,0.06) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,168,196,0.04) 0%, transparent 65%)", pointerEvents: "none" }} />
